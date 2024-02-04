@@ -33,4 +33,6 @@ def generate_datasource(service_context):
 
 if __name__ == "__main__":
     service_context = create_service_context()
-    generate_datasource(service_context)
+    # generate_datasource(service_context)
+    test_astradb()
+
