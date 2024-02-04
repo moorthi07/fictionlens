@@ -1,5 +1,5 @@
 import logging
-
+import os
 from dotenv import load_dotenv
 
 from app.engine.constants import DATA_DIR, STORAGE_DIR
@@ -8,6 +8,10 @@ from app.engine.loader import get_documents
 
 load_dotenv()
 
+ASTRA_DB_APPLICATION_TOKEN = os.environ.get("ASTRA_DB_APPLICATION_TOKEN")
+ASTRA_DB_API_ENDPOINT = os.environ.get("ASTRA_DB_API_ENDPOINT")
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+ 
 from llama_index import (
     SimpleDirectoryReader,
     VectorStoreIndex,
