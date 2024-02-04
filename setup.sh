@@ -5,6 +5,7 @@ conda activate fictionlens
 pip install ebooklib beautifulsoup4
 pip install openai
 pip install poetry
+pip install --upgrade astrapy
 cd backend   # important
 poetry init
 poetry install
